@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 734px;
+    width: auto;
+}
+
+/*omogoči še odzivnost footerja in navigacije */
+
+/* sintaksa za navigacijo */
+
+nav .gift {
+    background-color: #f0f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    height: 30px;
+}
+
+nav .gift a {
+    text-transform: uppercase;
+    color: black
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 1%;
+    z-index: 5;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    display: block;
+}
+
+/* tu 2x skriješ podmeni */
+.dropdown  {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7fcfb;
+    display: none;
+}
+
+.dropdown {
+    display: inline-block;
+    display: none;
+}
+
+.dropdown h3,
+.dropdown li a {
+    padding-top: 2%;
+   padding-left: 5%;
+}
+
+/*prikaz podmenuja */
+
+ul li:hover {
+    cursor: pointer;
+}
+
+nav ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  display: block;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+nav ul h1 {
+    color: darkblue;
+}
+
+nav ul .icons img {
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+}
+
+.dropdown img {
+    cursor: pointer;
+}
+
+/* hero section */
+.hero img {
+    height: 500px;
+    width: auto;
+}
+
+.hero .second {
+margin-left: 3%;
+}
+
+.hero button {
+background-color:  #fa11c5;
+color: white;
+font-weight: 700;
+width: 150px;
+height: 60px;
+position: absolute;
+top: 59%;
+left: 70%;
+}
+
+.hero button:hover {
+    background-color: #fff;
+    color:  #fa11c5 ;
+    border: 1 solid  #fa11c5;
+    }
+
+.hero p {
+width: 200px;
+height: 200px;
+position: absolute;
+top: 20%;
+left: 70%;
+font-size: 24px;
+}
+
+/* sintaksa footerja */
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.main-footer .title {
+height: 90px;
+width: 120px;
+padding-top: 2%;
+text-transform: uppercase;
+}
+
+.main-footer .title .skin {
+    color: violet;
+}
+
+.main-footer h3 {
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+}
+
+/* odstranitev privzetega stila za unorded list in email
++ :hover na li */ 
+.customer-care ul,
+.about ul {
+    list-style: none;
+}
+
+.customer-care ul li a,
+.about ul li a,
+.social-media a {
+    text-decoration: none;
+    color: black;
+}
+
+/* razmaki med h3 in li elementi */
+
+.main-footer ul li {
+    line-height: 25px;
+}
+
+.customer-care ul li a,
+.about ul li a,
+.social-media a {
+    text-decoration: none;
+    color: black;
+    line-height: 2px;
+}
+
+.customer-care ul li:hover ,
+.about ul li:hover,
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* od tu dalje so stilizirani preostali elementi */
+
+.klog h2 {
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.klog p {
+    height: 90px;
+    width: 120px;
+}
+
+.social-media  .icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+}
+.social-media .icons img {
+  height: 50px;
+  width: 50px;  
+}
+
+
+.additional-info {
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    position: relative;
+    height: 90px;
+    width: 100%;
+}
+
+.additional-info::before {
+content: '';
+position: absolute;
+top: 10px;
+width: 130px;
+height: 5px;
+background-color: black;
+}
+
+.copyright {
+    color: white;
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding:  0;
+}
+
+
+footer {
+    height: 734px;
+    width: auto;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: linear-gradient(to right,#7d66a1,  #54446c);
+    color: white;
+}
+
+/* stil za prvo divizijo */
+
+footer .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: auto;
+}
+
+footer .contact-info h2 {
+    font-size: 2.5rem;
+    padding-bottom: 2%;
+}
+
+footer .contact-info p {
+   width: 26%;
+}
+
+footer .contact-info button {
+    height: 50px;
+    width: 120px;
+  background-color: transparent; 
+  color: white;
+  border: 1px solid #d78891;
+  border-radius: 12%;
+  margin-top: 2%;
+ }
+
+ footer .contact-info button:hover {
+   background-color: #d78891;
+   color: white;
+   font-weight: 700;
+ }
+
+ /*stil za drugo divizijo */
+footer .additional-info {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .additional-info::before {
+content: '';
+position: absolute;
+background-color: silver;
+width: 60%;
+height: 1px;
+top: 40%;
+}
+
+footer .additional-info::after {
+    content: '';
+    position: absolute;
+    background-color: silver;
+    width: 60%;
+    height: 1px;
+    bottom: 25%;
+    }
+
+footer .additional-info ul {
+    list-style:none;
+    margin-left: 2%;
+    margin-right: 2%; /*popravljanje prekrivljanj,
+    ki pridejo s justify-content: center;  */
+}
+
+footer .additional-info h3 {
+    padding-bottom: 4%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+footer .additional-info ul li a {
+ text-decoration: none;
+ color: white;
+ opacity: 0.8; /*za zmanjšanje beline v pisavi */
+ cursor: pointer;
+ font-weight: 500;
+ line-height: 28px;
+}
+
+footer .additional-info ul li a:hover {
+    color: #d78891;
+    cursor: pointer;
+   }
+
+   /*tretja divizija */
+
+   footer .end {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       margin-top: 10%;
+   }
+
+   footer .end a {
+       text-decoration: none;
+       color: white;
+       cursor: pointer;
+   }
+
+   footer .end a:hover {
+    color: #d78891;
+}
+
+footer .end img {
+    cursor: pointer;
+}
+
+footer .end img:hover {
+  height: 30px;
+  width: auto;
+}
+
+
